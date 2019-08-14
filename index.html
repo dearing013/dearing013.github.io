@@ -1,7 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<link href = "style.css" rel = "stylesheet" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+ 
+   
+     <div class = "container" >
+    <a class = "a " href = "">Home </a>
+    <a class = "b" href= "">About</a>
+    <a  class = "c" href = "">Contact</a>
+    <a class = "d" href = "">Projects</a>
+    
+     </div>
+
+     <div class = "content">
+
+        <div class  = "home">
+            <h1>Eric Dearing</h1>
+            <h3>Front End Developer</h3>
+        </div>
+
+         <div class="aboutus">
+             <p><b>My name is Eric Dearing,</b><br>
+             I studied Informatics at Indiana University and graduated
+             in May 2017.  I am specializing in front end development<br>
+            
+            </p>
+            
+         </div>
+          <div class = "contact">
+                
+                <a href = "mailto:ericdearing24@yahoo.com"><img width = "100px" height = "100px" src ="images/email.jpg.jpg" ></a>
+            
+          </div>
+         </div>
+
+         
+
+         
+    </div>
+ <div class = "project">
+     <h1>Movie Search</h1>
+    <img width = "400px" height = "400px" src = "images/screenshot.jpg" /></div>
+   
+</div>
+<div class = "link">
+        
+        <a href = "mailto:ericdearing24@yahoo.com"><img src= "images/github.jpg.png" height="45px" width="30px"></a>
+    </div>
+
+</div>
+
+<!-- <script type = "text/javascript" src = "js/jquery-3.4.1.js" ></script> -->
+
+<script type = "text/javascript" src = "/js/jquery-3.2.1.min.js" ></script> 
+<script type = "text/javascript">
+
+$(document).ready(function() {
+    $('.a').click(function() {
+      $('.home').slideDown();
+       $('.aboutus').fadeOut();
+       $('.link').fadeOut();
+       $('.contact').fadeOut();
+       $('.project').fadeOut();
+        // var selected = $(this);
+        // $('a').removeClass('.active');
+        // $(selected).addClass('.active');
+        return false;
+    });
+
+    $('.b').click(function() {
+        $('.aboutus').fadeIn();
+        $('.link').fadeOut();
+        $('.home').fadeOut();
+        $('.contact').fadeOut();
+        $('.project').fadeOut();
+       return false;
+    });
+
+    $('.c').click(function() {
+        $('.gallery').hide();
+        $('.aboutus').fadeOut();
+        $('.home').fadeOut();
+        $('.contact').fadeIn();
+        $('.project').fadeOut();
+        return false;
+    });
+    
+    $('.d').click(function() {
+        $('.link').fadeIn();
+        $('.project').fadeIn();
+        $('.aboutus').fadeOut();
+        $('.home').fadeOut();
+        $('.contact').fadeOut();
+        
+        return false;
+    });
+  
+});
+
+//     var $a = $('.a'),
+//     // $b = $('.b'),
+//     // $c = $('.c'),
+//     // $d = $('.d'),
+//     $home = $('.home');
+//     // $about = $('.aboutus');
+//     // $gallery = $('.gallery'),
+//     // $contactus = $('.contactus');
+
+//     // $a.click(function() {
+//     //     $home.fadeIn();
+      
+//     // //     $aboutus.fadeOut();
+//     // //     $gallery.fadeOut();
+//     // //     $contactus.fadeOut();
+//     // // });
+//     // $b.click(function() {
+//     //     $aboutus.fadeIn();
+//     //     $home.fadeOut();
+//     //     $gallery.fadeOut();
+//     //     $contactus.fadeOut();
+//     // });
+
+//     // $c.click(function() {
+//     //     $gallery.fadeIn();
+//     //     $home.fadeOut();
+//     //     $aboutus.fadeOut();
+//     //     $contactus.fadeOut();
+//     // })
+
+//     // $d.click(function() {
+//     //     $contactus.fadeIn();
+//     //     $home.fadeOut();
+//     //     $gallery.fadeIn();
+//     //     $aboutus.fadeOut()
+        
+//     // })
+// });
+
+
+</script>
 </body>
+
 </html>
